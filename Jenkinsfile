@@ -78,7 +78,7 @@ pipeline {
                 script{
                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
                    sh 'docker login -u aditi2222 -p ${dockerhubpwd}'}
-                   sh 'docker push aditi222/ekart:latest'
+                   sh 'docker push aditi2222/ekart:latest'
                 }
             }
         }
